@@ -1,0 +1,351 @@
+entities:
+-   name
+-   drug
+-   food
+-   check
+-   department
+-   symptom
+infos:
+-   name
+-   desc
+-   prevent
+-   cause
+-   easy_get
+-   cure_department
+-   cure_way
+-   cure_lasttime
+-   symptom
+-   cured_prob
+-   get_prob
+relations_infos_dict:
+    symptom:
+    -   name
+    -   symptom
+    acompany:
+    -   name
+    -   name
+    cure_department:
+    -   name
+    -   department
+    common_drug:
+    -   name
+    -   drug
+    recommand_drug:
+    -   name
+    -   drug
+    not_eat:
+    -   name
+    -   food
+    do_eat:
+    -   name
+    -   food
+    check:
+    -   name
+    -   check
+    recommand_eat:
+    -   name
+    -   food
+qwds_dict:
+    symptom:
+    -   症状
+    -   表征
+    -   现象
+    -   症候
+    -   表现
+    cause:
+    -   原因
+    -   成因
+    -   为什么
+    -   怎么会
+    -   怎样才
+    -   咋样才
+    -   怎样会
+    -   咋样会
+    -   如何会
+    -   为啥
+    -   为何
+    -   如何才会
+    -   怎么才会
+    -   会导致
+    -   会造成
+    acompany:
+    -   并发症
+    -   并发
+    -   一起发生
+    -   一并发生
+    -   一起出现
+    -   一并出现
+    -   一同发生
+    -   一同出现
+    -   伴随发生
+    -   伴随
+    -   共现
+    food:
+    -   饮食
+    -   饮用
+    -   吃
+    -   食
+    -   伙食
+    -   膳食
+    -   喝
+    -   菜
+    -   忌口
+    -   补品
+    -   保健品
+    -   食谱
+    -   菜谱
+    -   食用
+    -   食物
+    drug:
+    -   药
+    -   药物
+    -   用药
+    -   胶囊
+    -   口服液
+    -   炎片
+    -   药片
+    prevent:
+    -   预防
+    -   防范
+    -   抵制
+    -   抵御
+    -   防止
+    -   逃避
+    -   躲避
+    -   避开
+    -   免得
+    -   逃开
+    -   避掉
+    -   躲开
+    -   躲掉
+    -   绕开
+    -   怎样才能不
+    -   怎样才不
+    -   怎么才能不
+    -   咋样才能不
+    -   咋才能不
+    -   如何才能不
+    -   怎样才不
+    -   怎么才不
+    -   咋样才不
+    -   咋才不
+    -   如何才不
+    -   怎样才可以不
+    -   怎么才可以不
+    -   咋样才可以不
+    -   咋才可以不
+    -   如何可以不
+    -   怎样才可不
+    -   怎么才可不
+    -   咋样才可不
+    -   咋才可不
+    -   如何可不
+    last_time:
+    -   周期
+    -   多久
+    -   多长时间
+    -   多长
+    -   多少时间
+    -   几天
+    -   几年
+    -   多少天
+    -   多少小时
+    -   几个小时
+    -   多少年
+    cure_way:
+    -   怎么治疗
+    -   如何治
+    -   如何医治
+    -   怎么医治
+    -   怎么治
+    -   怎么医
+    -   如何治
+    -   医疗方式
+    -   疗法
+    -   咋治
+    -   怎么办
+    -   咋办
+    -   咋治
+    cured_prob:
+    -   多大概率能治好
+    -   多大几率治好
+    -   多大几率能治好
+    -   治好希望大吗
+    -   几率
+    -   几成
+    -   比例
+    -   可能性
+    -   能治
+    -   可治
+    -   可以治
+    -   可以医
+    easy_get:
+    -   易感人群
+    -   容易感染
+    -   易发人群
+    -   什么人
+    -   哪些人
+    -   感染
+    -   染上
+    -   得上
+    -   容易得
+    check:
+    -   检查
+    -   检查项目
+    -   查出
+    -   检查出
+    -   检测出
+    -   测试出
+    -   测出
+    -   试出
+    belong:
+    -   属于什么科
+    -   属于
+    -   什么科
+    -   挂什么科
+    -   科室
+    cure:
+    -   治疗什么
+    -   治啥
+    -   治疗啥
+    -   医治啥
+    -   治愈啥
+    -   主治啥
+    -   主治什么
+    -   有什么用
+    -   有何用
+    -   用处
+    -   用途
+    -   有什么好处
+    -   有什么益处
+    -   有何益处
+    -   用来
+    -   用来做啥
+    -   用来干啥
+    -   用来做甚
+    -   需要
+    -   要
+question_judge_dict:
+    disease_symptom:
+    -   -   symptom
+    -   -   name
+    symptom_disease:
+    -   []
+    -   -   symptom
+    disease_cause:
+    -   -   cause
+    -   -   name
+    disease_acompany:
+    -   -   acompany
+    -   -   name
+    disease_not_food:
+    -   -   food
+        -   deny
+    -   -   name
+    disease_do_food:
+    -   -   food
+    -   -   name
+    food_not_disease:
+    -   -   food
+        -   deny
+    -   -   food
+    food_do_disease:
+    -   -   food
+    -   -   food
+    disease_drug:
+    -   -   drug
+    -   -   name
+    drug_disease:
+    -   -   cure
+    -   -   drug
+    disease_check:
+    -   -   check
+    -   -   name
+    check_disease:
+    -   -   check
+    -   -   check
+    disease_prevent:
+    -   -   prevent
+    -   -   name
+    disease_lasttime:
+    -   -   last_time
+    -   -   name
+    disease_cureway:
+    -   -   cure_way
+    -   -   name
+    disease_cureprob:
+    -   -   cured_prob
+    -   -   name
+    disease_easyget:
+    -   -   easy_get
+    -   -   name
+    disease_desc:
+    -   []
+    -   -   name
+entity_parser_dict:
+    disease_cause: cause
+    disease_prevent: prevent
+    disease_lasttime: last_time
+    disease_cureway: cure_way
+    disease_cureprob: cured_prob
+    disease_easyget: easy_get
+    disease_desc: desc
+relation_parser_dict:
+    disease_symptom:
+    -   m
+    -   symptom
+    symptom_disease:
+    -   n
+    -   symptom
+    disease_acompany:
+    -   m
+    -   acompany
+    disease_not_food:
+    -   m
+    -   not_eat
+    disease_do_food:
+    -   m
+    -   do_eat
+    food_not_disease:
+    -   n
+    -   not_eat
+    food_do_disease:
+    -   n
+    -   do_eat
+    disease_drug:
+    -   m
+    -   common_drug
+    drug_disease:
+    -   n
+    -   common_drug
+    disease_check:
+    -   m
+    -   check
+    check_disease:
+    -   n
+    -   check
+answer_dict:
+    disease_symptom: '{m}的症状包括：{n}'
+    symptom_disease: 症状{n}可能染上的疾病有：{m}
+    disease_cause: '{m}可能的成因有{n}'
+    disease_acompany: '{m}的并发症包括：{n}'
+    disease_not_food: '{m}忌食的食物包括有：{n}'
+    disease_do_food: '{m}宜食的食物包括有：{n}'
+    food_not_disease: 患有{m}的人最好不要吃{n}
+    food_do_disease: 患有{m}的人建议多试试{n}
+    disease_drug: '{m}通常的使用的药品包括：{n}'
+    drug_disease: '{n}主治的疾病有{m},可以试试'
+    disease_check: '{m}通常可以通过以下方式检查出来：{n}'
+    check_disease: 通常可以通过{n}检查出来的疾病有{m}
+    disease_prevent: '{m}的预防措施包括：{n}'
+    disease_lasttime: '{m}的治疗可能持续的周期为：{n}'
+    disease_cureway: '{m}可以尝试如下治疗：{n}'
+    disease_cureprob: '{m}治愈的概率为（仅供参考）：{n}'
+    disease_easyget: '{m}的易感人群包括：{n}'
+    disease_desc: '{m}，熟悉一下啊：{n}'
+templates:
+    answer: 您好，我是智能助理，希望可以帮到您。如果没答上来，可联系人工客服。祝您身体棒棒！
+    fallback: 我暂时无法处理您的问题哦，马上为您转接人工服务！
+    restart: 问答系统重启成功！
+    ask_entity: 不好意思，请问您想问的是哪个疾病呢？
+    ask_key_word: 不好意思，请问您想知道{}的什么方面问题呢？
